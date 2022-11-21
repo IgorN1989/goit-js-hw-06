@@ -10,4 +10,3 @@ function onInput(evt) {
         outputRef.textContent = "Anonymous";
     }
 };
-
