@@ -9,10 +9,16 @@ incrementBtnRef.addEventListener("click", onIncrementBtnClick);
 
 function onDecrementBtnClick() {
     counterValue -= 1;
-    valueRef.textContent = counterValue;
+    onOutputFromInput();
 }
 
 function onIncrementBtnClick() {
     counterValue += 1;
+    onOutputFromInput();
+}
+
+function onOutputFromInput() {
     valueRef.textContent = counterValue;
 }
+
+// Не знаю, як тут позбавитись дублювання кода на 12 та 17 строках
