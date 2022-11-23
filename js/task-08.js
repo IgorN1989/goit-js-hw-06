@@ -11,12 +11,14 @@ function onFormSubmit(evt) {
 
   if (email.length < 1 || password.length < 1) {
     alert('Всі поля повинні бути заповнені!');
-  } else {
-    const formData = {
-      email,
-      password,
-    };
-    console.log(formData);
-    formRef.reset();
+    return;
+  }
+  
+  const formData = {
+    email,
+    password,
   };
-};
+
+  console.log(formData);
+  formRef.reset();
+}

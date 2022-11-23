@@ -20,5 +20,3 @@ function onIncrementBtnClick() {
 function onOutputFromInput() {
     valueRef.textContent = counterValue;
 }
-
-// Не знаю, як тут позбавитись дублювання кода на 12 та 17 строках

@@ -1,9 +1,9 @@
 const inputRef = document.querySelector("#font-size-control");
 const textRef = document.querySelector("#text");
-textRef.style.fontSize = `${inputRef.value}px`;
+fontSize();
 
-inputRef.addEventListener("input", () => {
+inputRef.addEventListener("input", fontSize);
+
+function fontSize() {
     textRef.style.fontSize = `${inputRef.value}px`;
-});
-
-// Код дублюється, але якщо не додати на 3 строку, то "початкове" відображення невірне.
+}

@@ -9,5 +9,6 @@ function onInputCheck(evt) {
     evt.currentTarget.classList.remove('invalid');
   } else {
     evt.currentTarget.classList.add('invalid');
+    evt.currentTarget.classlist.remove('valid');
   }
 }
